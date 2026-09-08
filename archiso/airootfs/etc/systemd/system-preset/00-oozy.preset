@@ -1,0 +1,8 @@
+enable sddm.service
+enable NetworkManager.service
+enable bluetooth.service
+enable oozy-live-setup.service
+disable systemd-networkd.service
+disable systemd-networkd.socket
+disable systemd-networkd-wait-online.service
+disable iwd.service

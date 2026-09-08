@@ -1,0 +1,11 @@
+NAME="Oozy Linux"
+PRETTY_NAME="Oozy Linux"
+ID=oozy
+ID_LIKE=arch
+BUILD_ID=rolling
+ANSI_COLOR="1;36"
+HOME_URL="https://github.com/Dodoprospy3/Oozy-Linux"
+DOCUMENTATION_URL="https://wiki.archlinux.org"
+SUPPORT_URL="https://github.com/Dodoprospy3/Oozy-Linux/issues"
+BUG_REPORT_URL="https://github.com/Dodoprospy3/Oozy-Linux/issues"
+LOGO=archlinux-logo

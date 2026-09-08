@@ -1,0 +1,12 @@
+[Unit]
+Description=Prepare Oozy Linux live user and session
+After=local-fs.target systemd-sysusers.service
+Before=display-manager.service sddm.service
+
+[Service]
+Type=oneshot
+ExecStart=/usr/local/bin/oozy-live-setup
+RemainAfterExit=yes
+
+[Install]
+WantedBy=multi-user.target

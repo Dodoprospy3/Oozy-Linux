@@ -1,9 +1,3 @@
-#
-# Oozy Linux packages.x86_64
-# Based on official archiso releng + KDE Plasma + Calamares
-#
-
-# ========== Base / Rescue (from releng) ==========
 alsa-utils
 amd-ucode
 arch-install-scripts
@@ -133,79 +127,44 @@ xdg-utils
 xfsprogs
 xl2tpd
 zsh
-
-# ========== Networking ==========
 networkmanager
 network-manager-applet
-
-# ========== Display / Graphics ==========
-xorg-server
-xorg-xinit
-xorg-xwayland
-mesa
-vulkan-intel
-vulkan-radeon
-vulkan-virtio
-libva-intel-driver
-libva-mesa-driver
-intel-media-driver
-
-# ========== KDE Plasma ==========
 plasma-meta
 plasma-workspace
-plasma-desktop
-plasma-nm
-plasma-pa
-plasma-firewall
-plasma-systemmonitor
-plasma-browser-integration
-kinfocenter
-kscreen
-kwalletmanager
 sddm
 sddm-kcm
-breeze
-breeze-gtk
-oxygen
-oxygen-sounds
-powerdevil
-bluedevil
-kgamma
-kolourpaint
-okular
-gwenview
-dolphin
 konsole
-spectacle
-ark
-kwrite
-kate
-print-manager
-systemsettings
-
-# ========== Calamares ==========
-calamares
-
-# ========== Live session tools ==========
+dolphin
 firefox
-neovim
-git
-htop
-fastfetch
-bpytop
-noto-fonts
-noto-fonts-cjk
-noto-fonts-emoji
-ttf-dejavu
-ttf-liberation
-ttf-opensans
-
-# ========== Optional but useful ==========
-flatpak
+kate
+ark
+spectacle
+gwenview
+okular
+calamares
+kpmcore
+polkit-kde-agent
+kde-cli-tools
+xdg-user-dirs
 xdg-desktop-portal
 xdg-desktop-portal-kde
 pipewire
 pipewire-pulse
 pipewire-alsa
-pipewire-jack
 wireplumber
+noto-fonts
+noto-fonts-cjk
+noto-fonts-emoji
+ttf-dejavu
+ttf-liberation
+fastfetch
+git
+htop
+neovim
+mesa
+vulkan-intel
+vulkan-radeon
+libva-mesa-driver
+intel-media-driver
+bluez
+bluez-utils

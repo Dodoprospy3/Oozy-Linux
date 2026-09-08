@@ -1,15 +1,24 @@
 #!/bin/bash
-# Basic live session preparation
+set -euo pipefail
 
-# Create liveuser if it doesn't exist
-if ! id liveuser &>/dev/null; then
-    useradd -m -G wheel,audio,video,storage,optical -s /bin/bash liveuser
-    echo "liveuser:live" | chpasswd
-    echo "%wheel ALL=(ALL:ALL) NOPASSWD: ALL" > /etc/sudoers.d/liveuser
+if ! id liveuser >/dev/null 2>&1; then
+    useradd -m -u 1000 -G wheel,audio,video,storage,optical,lp,network,power,rfkill -s /bin/bash liveuser
 fi
 
-# Enable NetworkManager
-systemctl enable NetworkManager.service || true
+passwd -d liveuser >/dev/null 2>&1 || true
+passwd -d root >/dev/null 2>&1 || true
 
-# Set hostname
-echo "oozy-live" > /etc/hostname
+install -d -o liveuser -g liveuser /home/liveuser/Desktop
+install -d -o liveuser -g liveuser /home/liveuser/.config/autostart
+
+if [[ -f /usr/share/applications/oozy-install.desktop ]]; then
+    install -o liveuser -g liveuser -m 0755 /usr/share/applications/oozy-install.desktop /home/liveuser/Desktop/Install-Oozy-Linux.desktop
+fi
+
+if [[ -f /usr/share/applications/oozy-welcome.desktop ]]; then
+    install -o liveuser -g liveuser -m 0644 /usr/share/applications/oozy-welcome.desktop /home/liveuser/.config/autostart/oozy-welcome.desktop
+fi
+
+systemctl enable sddm.service >/dev/null 2>&1 || true
+systemctl enable NetworkManager.service >/dev/null 2>&1 || true
+systemctl enable bluetooth.service >/dev/null 2>&1 || true

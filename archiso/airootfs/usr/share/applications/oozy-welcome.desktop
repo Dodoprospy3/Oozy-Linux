@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Name=Oozy Welcome
+Comment=Welcome to Oozy Linux
+Exec=oozy-welcome
+Icon=help-about
+Terminal=false
+Categories=System;
+X-KDE-autostart-phase=2

@@ -1,0 +1,11 @@
+[Desktop Entry]
+Type=Application
+Version=1.0
+Name=Install Oozy Linux
+GenericName=System Installer
+Comment=Install Oozy Linux on your computer
+Exec=calamares-launch
+Icon=system-software-install
+Terminal=false
+Categories=System;Settings;
+StartupNotify=true

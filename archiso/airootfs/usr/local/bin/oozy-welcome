@@ -1,10 +1,6 @@
 #!/bin/bash
-# Simple placeholder welcome script for Oozy Linux live session
-
-echo "Welcome to Oozy Linux!"
-echo "Arch, but for sane people."
-echo ""
-echo "Start as goo. Learn Linux. Evolve."
-echo ""
-echo "To install, launch Calamares from the application menu or run:"
-echo "  sudo calamares"
+if command -v kdialog >/dev/null 2>&1; then
+    kdialog --title "Welcome to Oozy Linux" --msgbox "Welcome to Oozy Linux.\n\nArch, but for sane people.\n\nStart as goo. Learn Linux. Evolve.\n\nThis is a live session. Double-click Install Oozy Linux on the desktop to install.\n\nLive user: liveuser (sudo without a password)."
+else
+    echo "Welcome to Oozy Linux — Arch, but for sane people."
+fi

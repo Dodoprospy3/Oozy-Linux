@@ -1,0 +1,10 @@
+#!/bin/bash
+# Simple placeholder welcome script for Oozy Linux live session
+
+echo "Welcome to Oozy Linux!"
+echo "Arch, but for sane people."
+echo ""
+echo "Start as goo. Learn Linux. Evolve."
+echo ""
+echo "To install, launch Calamares from the application menu or run:"
+echo "  sudo calamares"

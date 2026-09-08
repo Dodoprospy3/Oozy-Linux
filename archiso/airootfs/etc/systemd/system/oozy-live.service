@@ -1,0 +1,11 @@
+[Unit]
+Description=Oozy Linux live session setup
+After=network.target
+
+[Service]
+Type=oneshot
+ExecStart=/usr/local/bin/oozy-live-setup
+RemainAfterExit=yes
+
+[Install]
+WantedBy=multi-user.target

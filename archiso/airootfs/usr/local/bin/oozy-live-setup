@@ -1,0 +1,15 @@
+#!/bin/bash
+# Basic live session preparation
+
+# Create liveuser if it doesn't exist
+if ! id liveuser &>/dev/null; then
+    useradd -m -G wheel,audio,video,storage,optical -s /bin/bash liveuser
+    echo "liveuser:live" | chpasswd
+    echo "%wheel ALL=(ALL:ALL) NOPASSWD: ALL" > /etc/sudoers.d/liveuser
+fi
+
+# Enable NetworkManager
+systemctl enable NetworkManager.service || true
+
+# Set hostname
+echo "oozy-live" > /etc/hostname

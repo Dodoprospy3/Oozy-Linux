@@ -1,0 +1,9 @@
+root:x:0:root
+adm:x:4:liveuser
+wheel:x:10:liveuser
+uucp:x:14:liveuser
+audio:x:1000:liveuser
+video:x:1001:liveuser
+storage:x:1002:liveuser
+optical:x:1003:liveuser
+liveuser:x:1000:

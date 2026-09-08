@@ -1,17 +1,18 @@
 #
-# Oozy Linux - Package list for the live ISO
-# Desktop Environment: KDE Plasma
-# Installer: Calamares
+# Oozy Linux packages.x86_64
+# Based on official archiso releng + KDE Plasma + Calamares
 #
 
-# --- Base system ---
+# ========== Base / Rescue (from releng) ==========
 alsa-utils
 amd-ucode
 arch-install-scripts
+archinstall
 b43-fwcutter
 base
 bcachefs-tools
 bind
+bolt
 brltty
 btrfs-progs
 clonezilla
@@ -19,32 +20,38 @@ cloud-init
 cryptsetup
 darkhttpd
 ddrescue
-dhclient
 dhcpcd
 diffutils
 dmidecode
-dmscrypt-proxy
+dmraid
+dnsmasq
 dosfstools
 e2fsprogs
 edk2-shell
+efibootmgr
 espeakup
+ethtool
 exfatprogs
 f2fs-tools
 fatresize
+foot-terminfo
 fsarchiver
-gnu-netcat
+ghostty-terminfo
 gpart
 gpm
 gptfdisk
-gvdrmfw
+grml-zsh-config
+grub
 hdparm
 hyperv
 intel-ucode
 irssi
+iw
 iwd
 jfsutils
 kitty-terminfo
-leastprivilege-sudo
+kmscon-terminfo
+ldns
 less
 lftp
 libfido2
@@ -54,6 +61,7 @@ linux-atm
 linux-firmware
 linux-firmware-marvell
 livecd-sounds
+lsscsi
 lvm2
 lynx
 man-db
@@ -65,6 +73,7 @@ memtest86+-efi
 mkinitcpio
 mkinitcpio-archiso
 mkinitcpio-nfs-utils
+mmc-utils
 modemmanager
 mtools
 nano
@@ -73,7 +82,7 @@ ndisc6
 nfs-utils
 nilfs-utils
 nmap
-ntfs-3g
+ntfsprogs
 nvme-cli
 open-iscsi
 open-vm-tools
@@ -91,8 +100,6 @@ pv
 qemu-guest-agent
 refind
 reflector
-reiserfsprogs
-rp-pppoe
 rsync
 rxvt-unicode-terminfo
 screen
@@ -122,18 +129,28 @@ wireless-regdb
 wireless_tools
 wpa_supplicant
 wvdial
+xdg-utils
 xfsprogs
 xl2tpd
 zsh
 
-# --- Networking & mirrors ---
+# ========== Networking ==========
 networkmanager
 network-manager-applet
-wpa_supplicant
-iwd
-reflector
 
-# --- KDE Plasma Desktop ---
+# ========== Display / Graphics ==========
+xorg-server
+xorg-xinit
+xorg-xwayland
+mesa
+vulkan-intel
+vulkan-radeon
+vulkan-virtio
+libva-intel-driver
+libva-mesa-driver
+intel-media-driver
+
+# ========== KDE Plasma ==========
 plasma-meta
 plasma-workspace
 plasma-desktop
@@ -151,7 +168,6 @@ breeze
 breeze-gtk
 oxygen
 oxygen-sounds
-plasma-thunderbolt
 powerdevil
 bluedevil
 kgamma
@@ -160,31 +176,36 @@ okular
 gwenview
 dolphin
 konsole
-catherine
 spectacle
 ark
 kwrite
+kate
+print-manager
+systemsettings
 
-# --- Calamares Installer ---
+# ========== Calamares ==========
 calamares
-calamares-config          # we will override/provide our own
 
-# --- Useful live tools ---
+# ========== Live session tools ==========
 firefox
 neovim
 git
 htop
 fastfetch
 bpytop
-
-# --- Fonts ---
-ttf-dejavu
-ttf-liberation
 noto-fonts
 noto-fonts-cjk
 noto-fonts-emoji
+ttf-dejavu
+ttf-liberation
+ttf-opensans
 
-# --- Firmware & hardware ---
-linux-firmware
-intel-ucode
-amd-ucode
+# ========== Optional but useful ==========
+flatpak
+xdg-desktop-portal
+xdg-desktop-portal-kde
+pipewire
+pipewire-pulse
+pipewire-alsa
+pipewire-jack
+wireplumber

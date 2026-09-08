@@ -9,8 +9,8 @@ You don't need to be an Arch expert to contribute.
 ## What You Can Contribute
 
 - 🐧 Linux / Arch development
-- 💻 Installer development
-- 🎨 UI/UX and branding
+- 💻 Installer development (Calamares)
+- 🎨 UI/UX and branding (especially KDE Plasma theming)
 - 📚 Documentation
 - 🧪 Testing
 - 🛠️ System configuration
@@ -19,12 +19,12 @@ You don't need to be an Arch expert to contribute.
 
 ## Getting Started
 
-1. Fork the repository.
+1. Fork the repository (or work on the `dev` branch if you have access).
 2. Create a branch for your changes.
 3. Make your changes.
-4. Test them.
+4. Test them (especially ISO builds when touching archiso/).
 5. Commit your changes.
-6. Open a pull request.
+6. Open a pull request against `dev` (preferred) or `main`.
 
 For larger changes, open an issue first so we can discuss the idea before you spend time building it.
 
@@ -32,14 +32,16 @@ For larger changes, open an issue first so we can discuss the idea before you sp
 
 Issues may use labels such as:
 
-- "good first issue" - Good for newcomers
-- "help wanted" - Extra help is needed
-- "documentation" - Documentation-related
-- "testing" - Needs testing
-- "installer" - Related to the installer
-- "packaging" - Related to packages
-- "website" - Related to the website
-- "design" - UI, UX, or branding
+- `good first issue` - Good for newcomers
+- `help wanted` - Extra help is needed
+- `documentation` - Documentation-related
+- `testing` - Needs testing
+- `installer` - Related to Calamares
+- `packaging` - Related to packages
+- `archiso` - Related to the ISO build system
+- `kde` - KDE Plasma related
+- `website` - Related to the website
+- `design` - UI, UX, or branding
 
 ## Pull Requests
 
@@ -51,7 +53,7 @@ Keep pull requests focused and explain:
 
 Small, focused pull requests are easier to review and merge.
 
-Code and Documentation
+### Code and Documentation
 
 Keep things simple, readable, and maintainable.
 
@@ -61,9 +63,13 @@ Documentation should be understandable to someone who is still learning Linux.
 
 ---
 
-if you are going to contribute the the **O**perating **S**ystem development, make sure to read this book carefully
+### Operating System Development
 
-[Download The Book](./stuff/helwan-book.pdf)
+If you are going to contribute to the **O**perating **S**ystem development (archiso, packages, installer, etc.), make sure to read this book carefully:
+
+**[Helwan Linux Guidebook (PDF)](Documents/helwan-book.pdf)**
+
+It contains practical experience building an Arch-based distribution.
 
 ---
 
@@ -73,9 +79,9 @@ Be respectful and constructive.
 
 Everyone starts somewhere. Beginners are welcome, questions are welcome, and mistakes are part of learning.
 
-The Goo Philosophy
+### The Goo Philosophy
 
-## Oozy isn't meant to keep users dependent on Oozy.
+Oozy isn't meant to keep users dependent on Oozy.
 
 We're here to help people learn Linux well enough that one day they don't need us.
 

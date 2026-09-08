@@ -1,0 +1,32 @@
+# Build artifacts
+out/
+work/
+*.iso
+*.img
+*.tar.zst
+*.tar.gz
+*.sig
+
+# Editor and OS junk
+*~
+*.swp
+*.swo
+.DS_Store
+.idea/
+.vscode/
+*.code-workspace
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Logs and temp
+*.log
+*.tmp
+.cache/
+
+# Local overrides
+local/
+*.local

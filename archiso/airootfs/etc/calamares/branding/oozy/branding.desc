@@ -1,0 +1,28 @@
+---
+componentName: oozy
+welcomeStyleCalamares: true
+welcomeExpandingLogo: true
+strings:
+    productName: Oozy Linux
+    shortProductName: Oozy
+    version: 1 mL
+    shortVersion: 1mL
+    versionedName: Oozy Linux 1 mL
+    shortVersionedName: Oozy 1 mL
+    bootloaderEntryName: Oozy
+    productUrl: https://github.com/Dodoprospy3/Oozy-Linux
+    supportUrl: https://github.com/Dodoprospy3/Oozy-Linux/issues
+    knownIssuesUrl: https://github.com/Dodoprospy3/Oozy-Linux/issues
+    releaseNotesUrl: https://github.com/Dodoprospy3/Oozy-Linux
+    donateUrl: https://github.com/Dodoprospy3/Oozy-Linux
+images:
+    productLogo: logo.png
+    productIcon: logo.png
+    productWelcome: logo.png
+slideshow: show.qml
+slideshowAPI: 2
+style:
+    sidebarBackground: "#0E1A22"
+    sidebarText: "#E8F4F8"
+    sidebarTextSelect: "#7EE0D6"
+    sidebarTextHighlight: "#1FA2A0"

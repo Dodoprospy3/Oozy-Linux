@@ -26,25 +26,21 @@ It exists to help you learn enough that one day you *can* leave it (or stay, if 
 
 ## Current Status (Oozy 1 mL)
 
-We now have a real foundation:
+We have a real, working foundation on the `dev` branch:
 
-- [x] archiso profile based on official Arch releng
-- [x] **KDE Plasma** as the default desktop
-- [x] **Calamares** installer with Oozy branding
-- [x] Live user + autologin into Plasma
-- [x] NetworkManager, PipeWire, basic sensible defaults
-- [x] os-release, motd, welcome flow
-- [ ] First successful public ISO build & testing
-- [ ] Wallpaper / logo polish
-- [ ] More polished welcome experience
+- archiso profile based on official Arch releng
+- **KDE Plasma** desktop with autologin
+- **Calamares** installer with Oozy branding
+- Live session ready for installation
+- Build script, documentation, and LICENSE
 
-The project lives mainly on the `dev` branch.
+The biggest remaining step is a successful ISO build + testing.
 
 ---
 
 ## Building the ISO
 
-You need an up-to-date Arch Linux system.
+Requires an up-to-date Arch Linux system:
 
 ```bash
 sudo pacman -Syu --needed archiso git
@@ -53,16 +49,12 @@ git clone https://github.com/Dodoprospy3/Oozy-Linux.git
 cd Oozy-Linux
 git checkout dev
 
-# Easy way
 sudo ./scripts/build.sh
-
-# Or manually
-sudo mkarchiso -v -w work -o out archiso/
 ```
 
-The ISO will appear in the `out/` directory.
+The ISO will be written to the `out/` directory.
 
-> **Note:** First builds take a long time and require several GB of free space + a good internet connection.
+See also [docs/TESTING.md](docs/TESTING.md).
 
 ---
 
@@ -75,18 +67,6 @@ The ISO will appear in the `out/` directory.
 - Avoid unnecessary bloat
 - Keep full access to the Arch ecosystem and AUR
 - Make recovering from common mistakes easier
-- Build a friendly open-source community
-
----
-
-## Release Philosophy
-
-Versions are measured in liquid volume:
-
-- Oozy 1 mL ← *current target*
-- Oozy 10 mL
-- Oozy 100 mL
-- …
 
 ---
 
@@ -94,18 +74,14 @@ Versions are measured in liquid volume:
 
 See [CONTRIBUTE.md](CONTRIBUTE.md).
 
-You don’t need to be an Arch expert. Documentation, testing, design, and ideas are all welcome.
-
-If you want to work on the OS itself, please also read the included Helwan guidebook:
-
-**[Documents/helwan-book.pdf](Documents/helwan-book.pdf)**
+For OS development, also read the included Helwan guidebook:  
+[Documents/helwan-book.pdf](Documents/helwan-book.pdf)
 
 ---
 
-## Principle
+## License
 
-> Oozy should teach, not hide.  
-> Make Linux easy to enter, easy to understand, and eventually easy to leave.
+GPL-3.0-or-later — see [LICENSE](LICENSE).
 
 ---
 

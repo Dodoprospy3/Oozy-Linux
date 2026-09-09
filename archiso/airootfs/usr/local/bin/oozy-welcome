@@ -1,6 +1,25 @@
 #!/bin/bash
+# Oozy Linux welcome script (live session)
+
+TITLE="Welcome to Oozy Linux"
+MSG="Arch, but for sane people.
+
+You are currently running the live session.
+
+• To install Oozy Linux, open “Install Oozy Linux” from the application menu
+  or run:  sudo calamares
+
+• Username: liveuser
+• Password: live
+
+Start as goo. Learn Linux. Evolve."
+
 if command -v kdialog >/dev/null 2>&1; then
-    kdialog --title "Welcome to Oozy Linux" --msgbox "Welcome to Oozy Linux.\n\nArch, but for sane people.\n\nStart as goo. Learn Linux. Evolve.\n\nThis is a live session. Double-click Install Oozy Linux on the desktop to install.\n\nLive user: liveuser (sudo without a password)."
+    kdialog --title "$TITLE" --msgbox "$MSG"
+elif command -v zenity >/dev/null 2>&1; then
+    zenity --info --title="$TITLE" --text="$MSG" --width=420
 else
-    echo "Welcome to Oozy Linux — Arch, but for sane people."
+    echo "$TITLE"
+    echo
+    echo "$MSG"
 fi

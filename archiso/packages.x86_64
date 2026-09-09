@@ -145,6 +145,7 @@ calamares
 kpmcore
 polkit-kde-agent
 kde-cli-tools
+kdialog
 xdg-user-dirs
 xdg-desktop-portal
 xdg-desktop-portal-kde

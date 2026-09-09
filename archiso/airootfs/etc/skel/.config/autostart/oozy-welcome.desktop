@@ -1,9 +1,9 @@
 [Desktop Entry]
 Type=Application
 Name=Oozy Welcome
-Comment=Welcome to Oozy Linux
-Exec=oozy-welcome
+Comment=Welcome message for Oozy Linux live session
+Exec=/usr/local/bin/oozy-welcome
 Icon=help-about
 Terminal=false
-Categories=System;
-X-KDE-autostart-phase=2
+Categories=Utility;
+X-GNOME-Autostart-enabled=true

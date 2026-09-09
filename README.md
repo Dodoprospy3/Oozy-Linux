@@ -1,168 +1,113 @@
 # Oozy Linux
-**Arch, but for sane people**
+
+**Arch, but for sane people.** 🫧
+
+> Start as goo. Learn Linux. Evolve.
+
+Oozy Linux is an Arch-based distribution designed for people who want the power and flexibility of Arch without needing to already understand Linux.
+
+The goal is **not** to hide Linux from beginners.  
+**It’s to teach them.**
 
 ---
 
-help email: oozylinux.help@gmail.com
-
----
-
-Oozy Linux is an Arch-based Linux distribution designed for people who want the power and flexibility of Arch without needing to already understand Linux.
-
-the goal isn not to hide Linux from begginers
-
-**It's to teach them**
-
----
-
-Oozy starts simple and gradually introduces users to the Linux ecosystem, the terminal, package management, configuration, and the concepts they need to eventually become confident Linux users.
-And maybe, one day, insane enough to install Arch manually.
-
----
-
-## The Goo philosophy
+## The Goo Philosophy
 
 Every Linux user starts somewhere.
 
-Whith Oozy, you start as a little goo ball.
+With Oozy, you start as a little goo ball.
 
-As you use the system, you learn more about Linux and gradually Evolve into bigger a goo ball step-by-step 
+As you use the system you learn more about Linux and gradually evolve — step by step.
 
-**Oozy doesn't exist to keep you using it, it exists to help you and show you that once you get experienced enough, you can leave it and you won't need it anymore**
+Oozy doesn’t exist to keep you using it forever.  
+It exists to help you learn enough that one day you *can* leave it (or stay, if you want).
+
+---
+
+## Current Status (Oozy 1 mL)
+
+We now have a real foundation:
+
+- [x] archiso profile based on official Arch releng
+- [x] **KDE Plasma** as the default desktop
+- [x] **Calamares** installer with Oozy branding
+- [x] Live user + autologin into Plasma
+- [x] NetworkManager, PipeWire, basic sensible defaults
+- [x] os-release, motd, welcome flow
+- [ ] First successful public ISO build & testing
+- [ ] Wallpaper / logo polish
+- [ ] More polished welcome experience
+
+The project lives mainly on the `dev` branch.
+
+---
+
+## Building the ISO
+
+You need an up-to-date Arch Linux system.
+
+```bash
+sudo pacman -Syu --needed archiso git
+
+git clone https://github.com/Dodoprospy3/Oozy-Linux.git
+cd Oozy-Linux
+git checkout dev
+
+# Easy way
+sudo ./scripts/build.sh
+
+# Or manually
+sudo mkarchiso -v -w work -o out archiso/
+```
+
+The ISO will appear in the `out/` directory.
+
+> **Note:** First builds take a long time and require several GB of free space + a good internet connection.
 
 ---
 
 ## Goals
 
-- make Arch-based Linux approachable to begginers 
-- Provide sensible defaults
-- Make installation simpler
+- Make Arch-based Linux approachable to beginners
+- Provide sensible defaults (KDE Plasma)
+- Make installation simple (Calamares)
 - Teach users how Linux works
 - Avoid unnecessary bloat
-- Preserve access to the Arch ecosystem (especially the AUR)
+- Keep full access to the Arch ecosystem and AUR
 - Make recovering from common mistakes easier
-- Build a friendly open-source community 
+- Build a friendly open-source community
 
 ---
 
-## Why Arch?
+## Release Philosophy
 
-Arch providew a powerful foundation with:
+Versions are measured in liquid volume:
 
-- Rolling releases
-- pacman (the package manager)
-- The Arch ecosystem 
-- Extensive Documentation 
-- The **AUR** (**A**rch **U**ser **R**epository) 
-- A large ecosystem of packages 
-- A minimal highly customizable system 
-
-Oozy aims to provide that foundation without requiring beginners to understand everything before they can even reach the desktop.
-
----
-
-## Release Philosophy 
-
-Oozy versions are measured in **liquid volume**.
-
-Because apparently normal version numbers weren't gooey enough.
-
-- Oozy 1 mL
+- Oozy 1 mL ← *current target*
 - Oozy 10 mL
 - Oozy 100 mL
-- Oozy 500 mL
-- Oozy 1 L
-- Oozy 5 L
-- Oozy 20 L
-- ...
-
-the first public release will be:
-
-### Oozy 1 mL
-
-**The first drop**
+- …
 
 ---
 
-## Current Status
-Oozy Linux is currently in the **early development and planning stage**.
+## Contributing
 
-The project is not ready for daily use yet.
+See [CONTRIBUTE.md](CONTRIBUTE.md).
 
-Current priorities include:
+You don’t need to be an Arch expert. Documentation, testing, design, and ideas are all welcome.
 
-- [ ] Define the base system
-- [ ] Design the installation experience
-- [ ] Develop the Oozy installer
-- [ ] Establish package and update policies
-- [ ] Design the beginner learning experience
-- [ ] Create the Oozy branding
-- [ ] Build the first bootable prototype
-- [ ] Test on virtual machines
-- [ ] Test on real hardware
-- [ ] Release Oozy 1 mL
+If you want to work on the OS itself, please also read the included Helwan guidebook:
+
+**[Documents/helwan-book.pdf](Documents/helwan-book.pdf)**
 
 ---
 
-## 🤝 Contributing
+## Principle
 
-Oozy Linux is an open-source project and welcomes contributors.
-
-You don't need to be an Arch expert to contribute.
-
-Areas where help is especially useful:
-
-- 🐧 Linux / Arch development
-- 💻 Installer development
-- 🎨 UI/UX and graphic design
-- 📚 Documentation
-- 🧪 Testing
-- 🛠️ System configuration
-- 🌐 Website development
-- 💡 Ideas and feedback
-
-If you're interested in helping, check the project's issues and contribution guidelines.
-Every contribution helps the goo evolve.
-
----
-
-## Our Principle 
-
-> Oozy should teach, not hide.
+> Oozy should teach, not hide.  
 > Make Linux easy to enter, easy to understand, and eventually easy to leave.
 
-Oozy should make Linux easy to enter without turning into a black box.
-
-Begginers should be able to use it.
-
-Curious users should be able to understand it.
-
-Experienced users should be able to customize it.
-
-And eventually, users should know enough to install Arch themselves.
-
 ---
 
-- > It is made for begginers
-
-- > it teaches you that after you become an expert, you can leave it and switch to something harder
-
-- > if you want to stick with it, that's completely valid!
-
-- > If you don't want to use Oozy Linux, the choice is yours! no one hired a hitman to sabotage you if you dont want to use Oozy (probably...).
-
----
-
-## License
-
-License information will be added as the project develops
-
----
-
-## Oozy Linux
-
-**Arch, but for sane people.**
-
-***Start as goo. Learn Linux. Evolve.***
-
----
+**Oozy Linux**  
+*Arch, but for sane people.*

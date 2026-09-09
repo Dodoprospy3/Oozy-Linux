@@ -1,10 +1,13 @@
-Welcome to Oozy Linux
-Arch, but for sane people.
 
-Start as goo. Learn Linux. Evolve.
+ Welcome to Oozy Linux (live session)
 
-Live user: liveuser   (no password, sudo is allowed)
-Installer: open "Install Oozy Linux" on the desktop, or run:  calamares-launch
+ Arch, but for sane people.
 
-Wiki: https://wiki.archlinux.org
-Project: https://github.com/Dodoprospy3/Oozy-Linux
+ • Username : liveuser
+ • Password : live
+
+ To install, open “Install Oozy Linux” from the menu
+ or run:  sudo calamares
+
+ Start as goo. Learn Linux. Evolve.
+

@@ -1,8 +1,7 @@
-enable sddm.service
+# Oozy Linux systemd presets (live + installed defaults)
+
 enable NetworkManager.service
+enable sddm.service
 enable bluetooth.service
-enable oozy-live-setup.service
 disable systemd-networkd.service
-disable systemd-networkd.socket
-disable systemd-networkd-wait-online.service
-disable iwd.service
+disable systemd-resolved.service

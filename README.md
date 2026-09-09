@@ -35,6 +35,7 @@ We have a real, working foundation on the `dev` branch:
 - Build script, documentation, and LICENSE
 
 The biggest remaining step is a successful ISO build + testing.
+unfortunately, the OS is still not available for usage yet, the OS is still under testing and debugging.
 
 ---
 
